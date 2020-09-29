@@ -1,0 +1,20 @@
+{
+    "name": "levi/giphy",
+    "description": "giphy api access",
+    "authors": [
+        {
+            "name": "Levi Coelho",
+            "email": "levicoelho@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload":{
+        "psr-0": {
+            "Client": "src/"
+        }
+    } 
+    
+}
