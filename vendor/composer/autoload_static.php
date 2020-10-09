@@ -55,22 +55,11 @@ class ComposerStaticInit05ee0969788c2f249e2bb907c15e9ed1
         ),
     );
 
-    public static $prefixesPsr0 = array (
-        'C' => 
-        array (
-            'Client' => 
-            array (
-                0 => __DIR__ . '/../..' . '/src',
-            ),
-        ),
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit05ee0969788c2f249e2bb907c15e9ed1::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit05ee0969788c2f249e2bb907c15e9ed1::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit05ee0969788c2f249e2bb907c15e9ed1::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
