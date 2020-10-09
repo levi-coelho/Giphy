@@ -24,6 +24,7 @@ class ComposerStaticInit05ee0969788c2f249e2bb907c15e9ed1
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Giphy\\' => 6,
         ),
     );
 
@@ -47,6 +48,10 @@ class ComposerStaticInit05ee0969788c2f249e2bb907c15e9ed1
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Giphy\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Giphy',
         ),
     );
 
