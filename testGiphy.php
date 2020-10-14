@@ -6,4 +6,4 @@ use Giphy\Giphy;
 
 $test = new Giphy();
 
-echo $test->gifSearch('cats');
+print_r ($test->stickersSearch("doggy"));
