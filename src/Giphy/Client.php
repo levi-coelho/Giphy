@@ -4,7 +4,8 @@ namespace Giphy;
 
 use GuzzleHttp\Client as GuzzleClient;
 
-class Client {
+class Client
+{
     private $client;
     private const BASE_URI = 'api.giphy.com/v1/';
     private const API_KEY = 'MC98WNBYcHZNaOQyQvxqYQn2cFpEMOi3';
@@ -20,14 +21,14 @@ class Client {
 
     public function get(string $url): array
     {
-        $response = $this->client->request('GET', $url . '&api_key=' . self::API_KEY);
+        $response = $this->client->request('GET', $url . 'api_key=' . self::API_KEY);
 
         return json_decode($response->getBody(), true);
     }
 
-    public function post(array $body, ?string $url = null ): array
+    public function post(array $body, ?string $url = null): array
     {
-        $response = $this->client->request('POST', $url . '&api_key=' . self::API_KEY, $body);
+        $response = $this->client->request('POST', $url . 'api_key=' . self::API_KEY, $body);
         
         return json_decode($response->getBody(), true);
     }

@@ -6,4 +6,4 @@ use Giphy\Giphy;
 
 $test = new Giphy();
 
-print_r ($test->stickersSearch("doggy"));
+print_r($test->stickersTrending());
