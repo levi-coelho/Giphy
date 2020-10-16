@@ -6,4 +6,4 @@ use Giphy\Giphy;
 
 $test = new Giphy();
 
-print_r($test->gifsSearch("pato"));
+print_r($test->gifsTrending());
