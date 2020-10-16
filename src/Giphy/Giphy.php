@@ -37,14 +37,14 @@ class Giphy
 
     public function stickersTrending(): array
     {
-        
         $response = $this->client->get('stickers/trending?');
         $filter = $this->transform($response);
 
         return $filter;
     }
 
-    private function transform(array $response): array{
+    private function transform(array $response): array
+    {
         $filter = [];
         
         foreach ($response['data'] as $item) {
